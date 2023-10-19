@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/design_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ListView
+            android:id="@+id/show_owned_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ListView
+            android:id="@+id/educator_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_owned_list"
+            />
+
+
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/educator_list"
+            android:layout_margin="10dp"
+            android:text="Dismiss dialog"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
